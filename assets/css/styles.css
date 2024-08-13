@@ -200,7 +200,6 @@ a {
 
 .clients .images a:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    
 }
 
 /* =========== Guides =========== */
@@ -216,7 +215,6 @@ a {
     font-size: 3.5rem;
     font-weight: 600;
     line-height: 1;
-    /* 100% */
 }
 
 .guides .sub-title::before {
@@ -658,6 +656,12 @@ a {
     width: 28px;
     height: 28px;
     border-radius: 3px;
+    background: #F9F9F9;
+}
+
+/* .scocial-link + .scocial-link sẽ tác động vô th thứ 2 */
+.footer .scocial-link {
+    margin-left: 16px;
 }
 
 .footer .scocial-link:hover {
