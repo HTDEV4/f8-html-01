@@ -65,8 +65,26 @@ a {
 /* Header */
 
 /* =========================== Header ============================ */
-.header {
+/* Tạo ra fixed-header để xài sticky bởi vì khi xài position là sticky tác động tới cha gần nhất 
+   và khi chúng ta kéo xuống btn More About thì thẻ nav sẽ bị dính lại*/
+.fixed-header {
+    background: #e6f0ff;
+    /* Bù padding cho thẻ nav ở dưới khi bù phần nào mình kiếm thẻ cha của nó
+       Lúc đầu là padding là 38 ở dưới thẻ nav là 12 nên ở đây sẽ bù 38 - 12 = 26 */
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    /* z-index chiều sâu */
+    z-index: 1;
+}
+
+.hero-wrap {
     position: relative;
+    /* Sử dụng display: flex; chỗ này để loại bỏ margin collapse */
+    display: flex;
+    /* Sử flex-direction: column; để phòng trường hợp thêm những class sau sẽ gây lỗi là các phần tử sẽ lên 1 hàng
+       Và flex-direction: column; sẽ giúp những thẻ con giữ đúng cột */
+    flex-direction: column;
     background: #e6f0ff;
     /* Kh để cứng chiều cao vì khi sử dụng màn hình khác nhau sẽ làm hỏng phần hero */
     height: 100vh;
@@ -78,7 +96,8 @@ a {
     display: flex;
     align-items: center;
     /* sử dụng margin-top: 50px; sẽ bị margin collapse phần ở trên sẽ bị kéo theo*/
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
 }
 
 .navbar ul {
