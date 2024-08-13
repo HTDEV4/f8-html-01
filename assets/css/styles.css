@@ -8,6 +8,11 @@
     --primary-color: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -677,7 +682,7 @@ a {
     width: 28px;
     height: 28px;
     border-radius: 3px;
-    background: #F9F9F9;
+    background: #f9f9f9;
 }
 
 /* .scocial-link + .scocial-link sẽ tác động vô th thứ 2 */
