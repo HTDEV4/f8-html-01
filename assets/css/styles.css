@@ -86,8 +86,10 @@ a {
        Và flex-direction: column; sẽ giúp những thẻ con giữ đúng cột */
     flex-direction: column;
     background: #e6f0ff;
-    /* Kh để cứng chiều cao vì khi sử dụng màn hình khác nhau sẽ làm hỏng phần hero */
-    height: 100vh;
+    /* Kh để cứng chiều cao vì khi sử dụng màn hình khác nhau sẽ làm hỏng phần hero và
+        Trừ thêm 90px vì phần Neo đã ăn thêm 90px nên hình sẽ bị tụt xuống
+    */
+    height: calc(100vh - 90px);
 }
 
 /* =============== Navbar ====================== */
