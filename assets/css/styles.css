@@ -90,6 +90,8 @@ a {
     /* Sử flex-direction: column; để phòng trường hợp thêm những class sau sẽ gây lỗi là các phần tử sẽ lên 1 hàng
        Và flex-direction: column; sẽ giúp những thẻ con giữ đúng cột */
     flex-direction: column;
+    /* Canh giữa phần hero khi phóng to thu nhỏ màn hình */
+    justify-content: center;
     background: #e6f0ff;
     /* Kh để cứng chiều cao vì khi sử dụng màn hình khác nhau sẽ làm hỏng phần hero và
         Trừ thêm 90px vì phần Neo đã ăn thêm 90px nên hình sẽ bị tụt xuống
@@ -140,15 +142,11 @@ a {
 }
 
 /* ========== Hero ================ */
-.hero {
-    margin-top: 130px;
-}
-
-.hero .info {
+.hero-wrap .info {
     width: 51%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     color: #687691;
     font-size: 1.8rem;
     font-weight: 500;
@@ -156,7 +154,7 @@ a {
     letter-spacing: 0.01em;
 }
 
-.hero .title {
+.hero-wrap .title {
     color: #000336;
     margin-top: 8px;
     font-size: 6.4rem;
@@ -167,7 +165,7 @@ a {
     */
 }
 
-.hero .desc {
+.hero-wrap .desc {
     color: #5a6473;
     margin-top: 30px;
     font-size: 1.8rem;
