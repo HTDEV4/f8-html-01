@@ -71,7 +71,7 @@ a {
 
 /* =========================== Header ============================ */
 /* Tạo ra fixed-header để xài sticky bởi vì khi xài position là sticky tác động tới cha gần nhất 
-   và khi chúng ta kéo xuống btn More About thì thẻ nav sẽ bị dính lại*/
+   và khi chúng ta kéo xuống btn More About thì thẻ nav sẽ bị dính lại */
 .fixed-header {
     background: #e6f0ff;
     /* Bù padding cho thẻ nav ở dưới khi bù phần nào mình kiếm thẻ cha của nó
